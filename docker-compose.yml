@@ -1,0 +1,8 @@
+services:
+  epaper-planner:
+    build: .
+    image: epaper-refresh-planner:latest
+    container_name: epaper-refresh-planner
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
